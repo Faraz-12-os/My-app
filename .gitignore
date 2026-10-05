@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+build/
+
+# Local database and dynamic runtime data
+data/*.json
+data/
+
+# Environment and sensitive keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Preserve example config
+!.env.example
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Native Mobile Build Artifacts (Capacitor / Android / iOS)
+android/.gradle
+android/app/build
+android/build
+ios/App/Pods
+ios/App/build
+ios/App/DerivedData
+*.apk
+*.aab
+*.ipa
+
+# System files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

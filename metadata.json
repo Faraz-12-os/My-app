@@ -1,0 +1,6 @@
+{
+  "name": "TempShield - Temporary Email & SMS Platform",
+  "description": "Enterprise-grade temporary email addresses and virtual phone numbers for instant OTP verification, spam protection, and privacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

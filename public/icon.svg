@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- App Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Glow Shield -->
+  <path d="M256 72 L392 128 C392 280 256 392 256 424 C256 392 120 280 120 128 Z" 
+        fill="none" stroke="#6366f1" stroke-width="6" opacity="0.3" filter="url(#glow)"/>
+
+  <!-- Main Shield -->
+  <path d="M256 80 L384 132 C384 274 256 380 256 410 C256 380 128 274 128 132 Z" 
+        fill="url(#shieldGrad)"/>
+
+  <!-- Inner Highlight -->
+  <path d="M256 94 L370 142 C370 266 256 364 256 392 C256 364 142 266 142 142 Z" 
+        fill="none" stroke="white" stroke-width="4" opacity="0.35"/>
+
+  <!-- TS Monogram in Monospace / Bold Display -->
+  <text x="256" y="278" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="124" 
+        font-weight="900" 
+        letter-spacing="-6"
+        fill="#ffffff" 
+        text-anchor="middle">TS</text>
+
+  <!-- Status indicator dot at bottom -->
+  <circle cx="256" cy="336" r="10" fill="#34d399"/>
+</svg>
